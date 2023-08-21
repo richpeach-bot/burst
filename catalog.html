@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BURST</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <picture class="logo__img">
+            <img src="images/logo.svg" alt="logo: BURST">
+          </picture>
+        </a>
+        <div class="header__box">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a href="#" class="menu__list-link">
+                  Женщины
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a href="#" class="menu__list-link">
+                  Мужчины
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a href="#" class="menu__list-link">
+                  Коллаборации
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a href="#" class="menu__list-link">
+                  О бренде
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="user__list">
+            <li class="user__list-item">
+              <a href="#" class="user__list-link">
+                <img src="images/search-icon.svg" alt="icon: search">
+              </a>
+            </li>
+            <li class="user__list-item">
+              <a href="#" class="user__list-link">
+                <img src="images/user-icon.svg" alt="icon: user">
+              </a>
+            </li>
+            <li class="user__list-item">
+              <a href="#" class="user__list-link">
+                <img src="images/cart-icon.svg" alt="icon: cart">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__list-item">
+          <a href="#">Главная</a>
+        </li>
+        <li class="breadcrumbs__list-item">
+          <a href="#">Женщины</a>
+        </li>
+        <li class="breadcrumbs__list-item">
+          <span>Куртки</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="catalog">
+    <div class="container">
+      <div class="catalog__wrapper">
+        <div class="catalog__filter">
+          <div class="catalog__filter-btn">
+            <span>Фильтры</span>
+            <span>Упорядочить</span>
+            <button class="catalog__filter-btn--grid-2 catalog__filter-button">
+              <img src="images/filter-1.svg" alt="icon: filter">
+            </button>
+            <button class="catalog__filter-btn--grid-3 catalog__filter-button catalog__filter-button--active">
+              <img src="images/filter-2.svg" alt="icon: filter">
+            </button>
+          </div>
+        </div>
+
+        <div class="catalog__inner">
+          <aside class="catalog__inner-aside aside-filter">
+            <h3 class="aside-filter__title">
+              Женщины
+            </h3>
+            <ul class="aside-filter__categories">
+              <li class="aside-filter__categories-item">
+                <a class="aside-filter__categories-link" href="#">
+                  Футболки
+                </a>
+              </li>
+              <li class="aside-filter__categories-item">
+                <a class="aside-filter__categories-link" href="#">
+                  Толстовки
+                </a>
+              </li>
+              <li class="aside-filter__categories-item">
+                <a class="aside-filter__categories-link" href="#">
+                  Куртки
+                </a>
+              </li>
+              <li class="aside-filter__categories-item">
+                <a class="aside-filter__categories-link" href="#">
+                  Рюкзаки
+                </a>
+              </li>
+              <li class="aside-filter__categories-item">
+                <a class="aside-filter__categories-link" href="#">
+                  Обувь
+                </a>
+              </li>
+              <li class="aside-filter__categories-item">
+                <a class="aside-filter__categories-link" href="#">
+                  Аксессуары
+                </a>
+              </li>
+            </ul>
+            <ul class="aside-filter__list">
+              <li class="aside-filter__item">
+                <p class="aside-filter__item-title">
+                  Размер
+                </p>
+                <div class="aside-filter__content">
+                  <div class="aside-filter__content-box">
+                    <div class="aside-filter__content-label">
+                      XS
+                      <input type="checkbox">
+                    </div>
+                  </div>
+                  <div class="aside-filter__content-box">
+                    <div class="aside-filter__content-label">
+                      S
+                      <input type="checkbox" checked>
+                    </div>
+                  </div>
+                  <div class="aside-filter__content-box">
+                    <div class="aside-filter__content-label">
+                      M
+                      <input type="checkbox">
+                    </div>
+                  </div>
+                  <div class="aside-filter__content-box">
+                    <div class="aside-filter__content-label">
+                      L
+                      <input type="checkbox">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="aside-filter__item">
+                <p class="aside-filter__item-title">
+                  СТОИМОСТЬ
+                </p>
+                <div class="aside-filter__item-content">
+                  <input class="js-range-slider" type="text" name="my-range" value="" data-type="double" data-min="999"
+                    data-max="20000" data-from="999" data-to="20000">
+                </div>
+              </li>
+            </ul>
+          </aside>
+          <div class="catalog__inner-list product-item__list">
+
+            <div class="product-item__wrapper">
+              <a class="product-item" href="#">
+                <div class="product-item__slider">
+                  <img class="product-item__img" src="images/content/product-1.jpg" alt="">
+                  <img class="product-item__img" src="images/content/product-1.jpg" alt="">
+                  <img class="product-item__img" src="images/content/product-1.jpg" alt="">
+                </div>
+
+                <div class="product-item__box">
+                  <div class="product-item__box-info">
+                    <h4 class="product-item__box-title">
+                      Кожаная байкерская куртка
+                    </h4>
+                    <p class="product-item__box-price">
+                      7 999 руб.
+                    </p>
+                  </div>
+                  <button class="product-item__box-favorite"></button>
+                </div>
+              </a>
+              <div class="product-item__hover">
+                <div class="product-item__hover-inner">
+                  <div class="product-item__hover-radiobtns">
+                    <div class="product-item__hover-radiobtn active">
+                      <input class="" type="radio" name="color" value="1" ckecked>
+                    </div>
+                  </div>
+                  <div class="product-item__hover-checkboxbtns">
+                    <div class="product-item__hover-checkboxbtn">
+                      <span>XS</span>
+                      <input type="checkbox" name="size-xs">
+                    </div>
+                    <div class="product-item__hover-checkboxbtn">
+                      <span>S</span>
+                      <input type="checkbox" name="size-s" checked>
+                    </div>
+                    <div class="product-item__hover-checkboxbtn">
+                      <span>M</span>
+                      <input type="checkbox" name="size-m">
+                    </div>
+                    <div class="product-item__hover-checkboxbtn">
+                      <span>L</span>
+                      <input type="checkbox" name="size-l">
+                    </div>
+                  </div>
+                </div>
+                <button class="product-item__hover-btn" type="submit">Добавить в корзину</button>
+              </div>
+            </div>
+
+            <div class="product-item__wrapper">
+              <a class="product-item" href="#">
+                <div class="product-item__slider">
+                  <img class="product-item__img" src="images/content/product-1.jpg" alt="">
+                  <img class="product-item__img" src="images/content/product-1.jpg" alt="">
+                  <img class="product-item__img" src="images/content/product-1.jpg" alt="">
+                </div>
+
+                <div class="product-item__box">
+                  <div class="product-item__box-info">
+                    <h4 class="product-item__box-title">
+                      Кожаная байкерская куртка
+                    </h4>
+                    <p class="product-item__box-price">
+                      7 999 руб.
+                    </p>
+                  </div>
+                  <button class="product-item__box-favorite"></button>
+                </div>
+              </a>
+              <div class="product-item__hover">
+                <div class="product-item__hover-inner">
+                  <div class="product-item__hover-radiobtns">
+                    <div class="product-item__hover-radiobtn">
+                      <input class="" type="radio" name="color" value="1" ckecked>
+                    </div>
+                  </div>
+                  <div class="product-item__hover-checkboxbtns">
+                    <div class="product-item__hover-checkboxbtn">
+                      <span>XS</span>
+                      <input type="checkbox" name="size-xs">
+                    </div>
+                    <div class="product-item__hover-checkboxbtn">
+                      <span>S</span>
+                      <input type="checkbox" name="size-s" checked>
+                    </div>
+                    <div class="product-item__hover-checkboxbtn">
+                      <span>M</span>
+                      <input type="checkbox" name="size-m">
+                    </div>
+                    <div class="product-item__hover-checkboxbtn">
+                      <span>L</span>
+                      <input type="checkbox" name="size-l">
+                    </div>
+                  </div>
+                </div>
+                <button class="product-item__hover-btn" type="submit">Добавить в корзину</button>
+              </div>
+            </div>
+
+            <div class="product-item__wrapper">
+
+              <button class="product-item__box-favorite"></button>
+              <a class="product-item" href="#">
+                <div class="product-item__slider">
+                  <img class="product-item__img" src="images/content/product-1.jpg" alt="">
+                  <img class="product-item__img" src="images/content/product-1.jpg" alt="">
+                  <img class="product-item__img" src="images/content/product-1.jpg" alt="">
+                  <!-- data-lazy="images/content/product-1.jpg" -->
+                </div>
+
+                <div class="product-item__box">
+                  <div class="product-item__box-info">
+                    <h4 class="product-item__box-title">
+                      Кожаная байкерская куртка
+                    </h4>
+                    <p class="product-item__box-price">
+                      7 999 руб.
+                    </p>
+                  </div> 
+                </div>
+              </a>
+              
+              <div class="product-item__hover">
+                <div class="product-item__hover-inner">
+                  <div class="product-item__hover-radiobtns">
+                    <div class="product-item__hover-radiobtn">
+                      <input class="" type="radio" name="color" value="1" ckecked>
+                    </div>
+                  </div>
+                  <div class="product-item__hover-checkboxbtns">
+                    <div class="product-item__hover-checkboxbtn">
+                      <span>XS</span>
+                      <input type="checkbox" name="size-xs">
+                    </div>
+                    <div class="product-item__hover-checkboxbtn">
+                      <span>S</span>
+                      <input type="checkbox" name="size-s" checked>
+                    </div>
+                    <div class="product-item__hover-checkboxbtn">
+                      <span>M</span>
+                      <input type="checkbox" name="size-m">
+                    </div>
+                    <div class="product-item__hover-checkboxbtn">
+                      <span>L</span>
+                      <input type="checkbox" name="size-l">
+                    </div>
+                  </div>
+                </div>
+                <button class="product-item__hover-btn" type="submit">Добавить в корзину</button>
+              </div>
+            </div>
+
+            <div class="product-item__wrapper">
+              <a class="product-item" href="#">
+                <div class="product-item__slider">
+                  <img class="product-item__img" src="images/content/product-1.jpg" alt="">
+                  <img class="product-item__img" src="images/content/product-1.jpg" alt="">
+                  <img class="product-item__img" src="images/content/product-1.jpg" alt="">
+                </div>
+
+                <div class="product-item__box">
+                  <div class="product-item__box-info">
+                    <h4 class="product-item__box-title">
+                      Кожаная байкерская куртка
+                    </h4>
+                    <p class="product-item__box-price">
+                      7 999 руб.
+                    </p>
+                  </div>
+                  <button class="product-item__box-favorite"></button>
+                </div>
+              </a>
+              <div class="product-item__hover">
+                <div class="product-item__hover-inner">
+                  <div class="product-item__hover-radiobtns">
+                    <div class="product-item__hover-radiobtn">
+                      <input class="" type="radio" name="color" value="1" ckecked>
+                    </div>
+                  </div>
+                  <div class="product-item__hover-checkboxbtns">
+                    <div class="product-item__hover-checkboxbtn">
+                      <span>XS</span>
+                      <input type="checkbox" name="size-xs">
+                    </div>
+                    <div class="product-item__hover-checkboxbtn">
+                      <span>S</span>
+                      <input type="checkbox" name="size-s" checked>
+                    </div>
+                    <div class="product-item__hover-checkboxbtn">
+                      <span>M</span>
+                      <input type="checkbox" name="size-m">
+                    </div>
+                    <div class="product-item__hover-checkboxbtn">
+                      <span>L</span>
+                      <input type="checkbox" name="size-l">
+                    </div>
+                  </div>
+                </div>
+                <button class="product-item__hover-btn" type="submit">Добавить в корзину</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <div class="contacts__inner">
+      <div class="contacts__info">
+        <h2 class="contacts__info-title">
+          УЗНАВАЙТЕ ПЕРВЫМИ
+        </h2>
+        <p class="contacts__info-text">
+          Подпишитесь на нашу новостную рассылку <br> и получите скидку 15% на первый заказ
+        </p>
+      </div>
+      <form class="contacts__form">
+        <input class="contacts__form-input" type="email" placeholder="Email Address" required>
+        <div class="btn__inner">
+          <button class="btn">
+            <svg>
+              <rect x="0" y="0" fill="none" width="100%" height="100%"></rect>
+            </svg>
+            <span>Подписаться</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__inner">
+        <div class="footer__item">
+          <h6 class="footer__item-title">
+            О НАС
+          </h6>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Блог
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Услуги ателье
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Карьера в BURST
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Производство
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__item">
+          <h6 class="footer__item-title">
+            ПОМОЩЬ
+          </h6>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Доставка и оплата
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Возврат и обмен
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Публичная оферта
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Политика конфиденциальности
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__item">
+          <h6 class="footer__item-title">
+            КОНТАКТЫ
+          </h6>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Шоурум
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Обратная связь
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Предзаказ
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <h6 class="footer__item-title">
+            BURST
+          </h6>
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a class="social-list__link" href="http://instagram.com/" target="_blank">
+                <img src="images/instagram.svg" alt="social icon: instagram">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://facebook.com/" target="_blank">
+                <img src="images/facebook.svg" alt="social icon: facebook">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://vk.com/" target="_blank">
+                <img src="images/vk.svg" alt="social icon: vk">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://www.whatsapp.com/" target="_blank">
+                <img src="images/whatsapp.svg" alt="social icon: whatsapp">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://web.telegram.org/" target="_blank">
+                <img src="images/telegram.svg" alt="social icon: telegram">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/ion.rangeSlider.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

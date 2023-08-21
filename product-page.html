@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BURST</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="#">
+            <picture class="logo__img">
+              <img src="images/logo.svg" alt="logo: BURST">
+            </picture>
+          </a>
+          <div class="header__box">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a href="#" class="menu__list-link">
+                    Женщины
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#" class="menu__list-link">
+                    Мужчины
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#" class="menu__list-link">
+                    Коллаборации
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#" class="menu__list-link">
+                    О бренде
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <ul class="user__list">
+              <li class="user__list-item">
+                <a href="#" class="user__list-link">
+                  <img src="images/search-icon.svg" alt="icon: search">
+                </a>
+              </li>
+              <li class="user__list-item">
+                <a href="#" class="user__list-link">
+                  <img src="images/user-icon.svg" alt="icon: user">
+                </a>
+              </li>
+              <li class="user__list-item">
+                <a href="#" class="user__list-link">
+                  <img src="images/cart-icon.svg" alt="icon: cart">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="navigation">
+      <div class="container">
+        <div class="navigation__inner">
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__list-item">
+                <a href="#">Главная</a>
+              </li>
+              <li class="breadcrumbs__list-item">
+                <a href="#">Женщины</a>
+              </li>
+              <li class="breadcrumbs__list-item">
+                <a href="#">Куртки</a>
+              </li>
+              <li class="breadcrumbs__list-item">
+                <span>Байкерская куртка с молниями</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pagination">
+            <ul class="pagination__list">
+              <li class="pagination__list-item">
+                <a href="#">Предыдущая стр</a>
+              </li>
+              <li class="pagination__list-item">
+                <a href="#">Следующая стр</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <section class="product-card page-section">
+      <div class="container">
+        <div class="product-card__inner">
+          <div class="product-card__slider-wrapper">
+            <div class="product-card__slider-nav">
+              <div class="product-card__slide-nav">
+                <img src="images/content/pslider-card-1.jpg" alt="">
+              </div>
+              <div class="product-card__slide-nav">
+                <img src="images/content/pslider-card-2.jpg" alt="">
+              </div>
+              <div class="product-card__slide-nav">
+                <img src="images/content/pslider-card-3.jpg" alt="">
+              </div>
+              <div class="product-card__slide-nav">
+                <img src="images/content/pslider-card-4.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="product-card__slider">
+              <div class="product-card__slide">
+                <img src="images/content/product-card-1.jpg" alt="">
+              </div>
+              <div class="product-card__slide">
+                <img src="images/content/product-card-1.jpg" alt="">
+              </div>
+
+              <div class="product-card__slide">
+                <img src="images/content/product-card-1.jpg" alt="">
+              </div>
+
+              <div class="product-card__slide">
+                <img src="images/content/product-card-1.jpg" alt="">
+              </div>
+
+            </div>
+          </div>
+          <div class="product-card__info">
+            <div class="product-card__content">
+              <div class="product-card__title">
+                <h2 class="product-card__name">
+                  Байкерская куртка с молниями
+                </h2>
+                <span class="product-card__price">
+                  12 999 руб.
+                </span>
+              </div>
+
+              <p class="product-card__code">
+                АРТ. 410457
+              </p>
+              <div class="product-card__box">
+                <div class="product-card__radio-btns">
+                  <div class="product-card__radio active">
+                    <input type="radio" name="color" value="1" ckecked>
+                  </div>
+                </div>
+                <span class="product-card__radio-label">
+                  Цвет: чёрный
+                </span>
+              </div>
+              <div class="product-card__select">
+                <select name="size" id="size">
+                  <option selected disabled>Выберите размер</option>
+                  <option value="xs">XS</option>
+                  <option value="s">S</option>
+                  <option value="m">M</option>
+                  <option value="l">L</option>
+                </select>
+              </div>
+              <a class="product-card__link popup-link" href="#size-table">
+                Узнайте свой размер
+              </a>
+              <div class="product-card__btns">
+                <button class="product-card__cart" type="submit">Добавить в корзину</button>
+                <button class="product-card__favorite"></button>
+              </div>
+
+              <div class="product-card__tips-items">
+                <div class="product-card__tips-item">
+                  <div class="product-card__tips-box">
+                    <a class="product-card__tips-title product-card__tips-title--delivery popup-link" href="#delivery">
+                      Доставка и возврат
+                    </a>
+                  </div>
+                  <div class="product-card__tips-box">
+                    <a class="product-card__tips-title product-card__tips-title--about popup-link" href="#about">
+                      Описание товара
+                    </a>
+                  </div>
+                </div>
+
+                <div class="product-card__tips-item">
+                  <div class="product-card__tips-box">
+                    <a class="product-card__tips-title product-card__tips-title--composition popup-link"
+                      href="#composition">
+                      Состав и уход
+                    </a>
+                  </div>
+                  <div class="product-card__tips-box">
+                    <a class="product-card__tips-title product-card__tips-title--share popup-link" href="#share">
+                      Поделиться
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="goods page-section">
+      <div class="conteiner">
+        <h2 class="goods__title">
+          ДОПОЛНИ СВОЙ ОБРАЗ
+        </h2>
+        <div class="goods__inner">
+          <div class="goods__cards">
+            <div class="goods__card">
+              <a class="goods__link" href="#">
+
+                <img class="goods__card-img" src="images/content/goods-1.jpg" alt="">
+                <p class="goods__card-title">
+                  Базовая футболка
+                </p>
+                <p class="goods__card-price">
+                  1 999 руб.
+                </p>
+
+              </a>
+            </div>
+            <div class="goods__card">
+              <a class="goods__link" href="#">
+
+                <img class="goods__card-img" src="images/content/goods-2.jpg" alt="">
+                <p class="goods__card-title">
+                  Кожаные туфли на каблуке
+                </p>
+                <p class="goods__card-price">
+                  4 999 руб.
+                </p>
+
+              </a>
+            </div>
+            <div class="goods__card">
+              <a class="goods__link" href="#">
+
+                <img class="goods__card-img" src="images/content/goods-3.jpg" alt="">
+                <p class="goods__card-title">
+                  Серьги
+                </p>
+                <p class="goods__card-price">
+                  999 руб.
+                </p>
+
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__inner">
+        <div class="contacts__info">
+          <h2 class="contacts__info-title">
+            УЗНАВАЙТЕ ПЕРВЫМИ
+          </h2>
+          <p class="contacts__info-text">
+            Подпишитесь на нашу новостную рассылку <br> и получите скидку 15% на первый заказ
+          </p>
+        </div>
+
+        <form class="contacts__form">
+          <input class="contacts__form-input" type="email" placeholder="Email Address" required>
+          <!-- <button class="contacts__form-btn btn--black" type="submit">Подписаться</button> -->
+          <div class="btn__inner">
+            <button class="btn">
+              <svg>
+                <rect x="0" y="0" fill="none" width="100%" height="100%"></rect>
+              </svg>
+              <span>Подписаться</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__inner">
+          <div class="footer__item">
+            <h6 class="footer__item-title">
+              О НАС
+            </h6>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Блог
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Услуги ателье
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Карьера в BURST
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Производство
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__item">
+            <h6 class="footer__item-title">
+              ПОМОЩЬ
+            </h6>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Доставка и оплата
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Возврат и обмен
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Публичная оферта
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Политика конфиденциальности
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__item">
+            <h6 class="footer__item-title">
+              КОНТАКТЫ
+            </h6>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Шоурум
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Обратная связь
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Предзаказ
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h6 class="footer__item-title">
+              BURST
+            </h6>
+            <ul class="social-list">
+              <li class="social-list__item">
+                <a class="social-list__link" href="http://instagram.com/" target="_blank">
+                  <img src="images/instagram.svg" alt="social icon: instagram">
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="https://facebook.com/" target="_blank">
+                  <img src="images/facebook.svg" alt="social icon: facebook">
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="https://vk.com/" target="_blank">
+                  <img src="images/vk.svg" alt="social icon: vk">
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="https://www.whatsapp.com/" target="_blank">
+                  <img src="images/whatsapp.svg" alt="social icon: whatsapp">
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="https://web.telegram.org/" target="_blank">
+                  <img src="images/telegram.svg" alt="social icon: telegram">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <div class="popup" id="delivery">
+    <div class="popup__body">
+      <div class="popup__content">
+        <a class="popup__close close-popup" href="#"></a>
+        <div class="popup__item">
+          <h5 class="popup__item-title">
+            Правила Отправки
+          </h5>
+          <div class="popup__item-text">
+            <p>Стоимость доставки зависит от выбранного вами варианта:</p>
+            <p>- Доставка в магазин: от 2 до 14 дней, <span>бесплатно</span> (только для предоплаченных заказов)</p>
+            <p>- Курьерская доставка: от 2 до 14 дней, <span>280 РУБ</span>, возможна оплата картой у курьера.</p>
+            <p>- Пункты самовывоза: от 2 до 14 дней, <span>280 РУБ</span>.</p>
+            <p>- Почта России: от 3 до 20 дней, <span>280 РУБ</span>.</p>
+          </div>
+        </div>
+
+        <div class="popup__item">
+          <h5 class="popup__item-title">
+            Правила Возврата
+          </h5>
+          <div class="popup__item-text">
+            <p>Любой возврат должен быть осуществлен в течение 30 дней с момента отгрузки.</p>
+            <p>Товар можно вернуть в интернет-магазин следующими способами:</p>
+            <p>- бесплатным курьером (заполнив форму на сайте)</p>
+            <p>- Почтой России</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="about">
+    <div class="popup__body">
+      <div class="popup__content">
+        <a class="popup__close close-popup" href="#"></a>
+        <div class="popup__item">
+          <h5 class="popup__item-title">
+            Описание товара
+          </h5>
+          <div class="popup__item-text">
+            <p>- широкие фигурные лацканы</p>
+            <p>- длинные рукава с манжетами на молнии</p>
+            <p>- цвет: черный</p>
+            <p>- рост модели: 179 cm</p>
+            <p>- модель носит размер: S/36</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="composition">
+    <div class="popup__body">
+      <div class="popup__content">
+        <a class="popup__close close-popup" href="#"></a>
+        <div class="popup__item">
+          <h5 class="popup__item-title">
+            Состав
+          </h5>
+          <div class="popup__item-text">
+            <p>Внешняя сторона: 100% ПОЛИУРЕТАН</p>
+            <p>Подкладка: 100% ПОЛИЭСТЕР</p>
+          </div>
+        </div>
+        <div class="popup__item">
+          <h5 class="popup__item-title">
+            Рекоменлации по уходу
+          </h5>
+          <div class="popup__item-text">
+            <p>- СТИРКА ЗАПРЕЩЕНА</p>
+            <p>- НЕ ИСПОЛЬЗОВАТЬ ОТБЕЛИВАТЕЛИ</p>
+            <p>- НЕ СУШИТЬ В БАРАБАННОЙ СУШИЛКЕ</p>
+            <p>- ГЛАДИТЬ ЗАПРЕЩЕНО</p>
+            <p>- ХИМИЧЕСКАЯ ЧИСТКА ЗАПРЕЩЕНА</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="share">
+    <div class="popup__body">
+      <div class="popup__content">
+        <a class="popup__close close-popup" href="#"></a>
+        <div class="popup__item">
+          <h5 class="popup__item-title">
+            Поделиться
+          </h5>
+          <ul class="popup__list">
+            <li class="popup__list-item">
+              <a class="popup__list-link" href="#">
+                <img src="images/instagram.svg" alt="">
+                <span>Instagram</span>
+              </a>
+            </li>
+            <li class="popup__list-item">
+              <a class="popup__list-link" href="#">
+                <img src="images/facebook.svg" alt="">
+                <span>Facebook</span>
+              </a>
+            </li>
+            <li class="popup__list-item">
+              <a class="popup__list-link" href="#">
+                <img src="images/vk.svg" alt="">
+                <span>VKontakte</span>
+              </a>
+            </li>
+            <li class="popup__list-item">
+              <a class="popup__list-link" href="#">
+                <img src="images/whatsapp.svg" alt="">
+                <span>WhatsApp</span>
+              </a>
+            </li>
+            <li class="popup__list-item">
+              <a class="popup__list-link" href="#">
+                <img src="images/telegram.svg" alt="">
+                <span>Telegram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="size-table">
+    <div class="popup__body">
+      <div class="popup__content">
+        <a class="popup__close close-popup" href=""></a>
+        <div class="popup__item">
+          <h5 class="popup__item-title">
+            Таблица размеров
+          </h5>
+          <div class="popup__table">
+            <ul class="popup__table-list">
+              <li>Размер</li>
+              <li>Международный размер</li>
+              <li>Российский размер</li>
+              <li>GB</li>
+              <li>US</li>
+              <li>Обхват груди (см)</li>
+              <li>Обхват талии (см)</li>
+              <li>Обхват бедер (см)</li>
+              <li>Рост</li>
+            </ul>
+            <ul class="popup__table-list">
+              <li>XXS</li>
+              <li>32</li>
+              <li>40</li>
+              <li>4</li>
+              <li>2</li>
+              <li>78</li>
+              <li>60</li>
+              <li>86</li>
+              <li>160</li>
+            </ul>
+            <ul class="popup__table-list">
+              <li>XS</li>
+              <li>34</li>
+              <li>42</li>
+              <li>6</li>
+              <li>4</li>
+              <li>82</li>
+              <li>64</li>
+              <li>90</li>
+              <li>164</li>
+            </ul>
+            <ul class="popup__table-list">
+              <li>S</li>
+              <li>36</li>
+              <li>44</li>
+              <li>8</li>
+              <li>6</li>
+              <li>86</li>
+              <li>68</li>
+              <li>94</li>
+              <li>164</li>
+            </ul>
+            <ul class="popup__table-list">
+              <li>M</li>
+              <li>38</li>
+              <li>46</li>
+              <li>10</li>
+              <li>8</li>
+              <li>90</li>
+              <li>72</li>
+              <li>102</li>
+              <li>170</li>
+            </ul>
+            <ul class="popup__table-list">
+              <li>L</li>
+              <li>40-42</li>
+              <li>48-50</li>
+              <li>12-14</li>
+              <li>10-12</li>
+              <li>94-98</li>
+              <li>76-80</li>
+              <li>102-106</li>
+              <li>176</li>
+            </ul>
+            <ul class="popup__table-list">
+              <li>XL</li>
+              <li>44</li>
+              <li>52</li>
+              <li>16</li>
+              <li>14</li>
+              <li>102</li>
+              <li>84</li>
+              <li>110</li>
+              <li>176</li>
+            </ul>
+            <ul class="popup__table-list">
+              <li>XXL</li>
+              <li>46</li>
+              <li>54</li>
+              <li>18</li>
+              <li>16</li>
+              <li>106</li>
+              <li>88</li>
+              <li>114</li>
+              <li>178</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/ion.rangeSlider.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

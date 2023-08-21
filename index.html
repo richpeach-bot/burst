@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BURST</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="header header-hero">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <picture class="logo__img">
+            <img src="images/logo-white.svg" alt="logo: BURST">
+          </picture>
+        </a>
+        <div class="header__box">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a href="#" class="menu__list-link menu__list-link--white">
+                  Женщины
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a href="#" class="menu__list-link menu__list-link--white">
+                  Мужчины
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a href="#" class="menu__list-link menu__list-link--white">
+                  Коллаборации
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a href="#" class="menu__list-link menu__list-link--white">
+                  О бренде
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="user__list">
+            <li class="user__list-item">
+              <a href="#" class="user__list-link">
+                <img src="images/search-icon-white.svg" alt="icon: search">
+              </a>
+            </li>
+            <li class="user__list-item">
+              <a href="#" class="user__list-link">
+                <img src="images/user-icon-white.svg" alt="icon: user">
+              </a>
+            </li>
+            <li class="user__list-item">
+              <a href="#" class="user__list-link">
+                <img src="images/cart-icon-white.svg" alt="icon: cart">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-section top">
+    <div class="page-section__wrapper top__wrapper">
+      <div class="top__inner">
+
+        <!-- <div class="top__slider">
+          <img src="images/top-bg-1.jpg" alt="">
+          <img src="images/top-bg-2.jpg" alt="">
+          <img src="images/top-bg-3.jpg" alt="">
+          <img src="images/top-bg-4.jpg" alt="">
+          <img src="images/top-bg-5.jpg" alt="">
+          <img src="images/top-bg-6.jpg" alt="">
+          <img src="images/top-bg-7.jpg" alt="">
+          <img src="images/top-bg-8.jpg" alt="">
+        </div> -->
+
+        <div class="top__btns">
+          <img class="top__slider-play" src="images/play.svg" alt="">
+
+          <div class="btn__inner">
+            <button class="btn">
+              <svg>
+                <rect x="0" y="0" fill="none" width="100%" height="100%"></rect>
+              </svg>
+              <span>Перейти к коллекции</span>
+            </button>
+          </div>
+          <!-- <a class="top__btn btn" href="#">Перейти к коллекции</a> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section categories">
+    <div class="categories__inner">
+      <div class="categories__box">
+        <a class="categories__btn btn" href="#">Женщины</a>
+      </div>
+      <div class="categories__box--right">
+        <a class="categories__btn btn" href="#">Мужчины</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section collaborations">
+    <div class="page-section__wrapper collaborations__wrapper">
+      <div class="collaborations__inner">
+        <!-- <h2 class="collaborations__title">
+        BURST&FEDOROV
+      </h2> -->
+        <p class="collaborations__text">
+          Лимитированная коллекция обуви от дизайнера Федорова <br> Количество пар ограничено
+        </p>
+        <!-- <a class="collaborations__btn btn" href="#">Забронировать</a> -->
+        <div class="collaborations__btn btn__inner">
+          <button class="btn">
+            <svg>
+              <rect x="0" y="0" fill="none" width="100%" height="100%"></rect>
+            </svg>
+            <span>Забронировать</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section about">
+    <div class="container">
+      <div class="about__inner">
+        <div class="about__item">
+          <img class="about__item-img" src="images/about-1.jpg" alt="about image">
+          <h5 class="about__item-title">
+            Шоурум в центре Москвы
+          </h5>
+          <p class="about__item-text">
+            В нашем шоуруме Вы сможете насладиться свежим кофе и подобрать себе лук на любой выход.
+            Мы находимся в шаговой доступности от метро...
+          </p>
+        </div>
+        <div class="about__item">
+          <img class="about__item-img" src="images/about-2.jpg" alt="about image">
+          <h5 class="about__item-title">
+            Производство
+          </h5>
+          <p class="about__item-text">
+            Простой крой, натуральные ткани и природные оттенки. Все ткани сертифицируются OEKO-TEX® Standard 100.
+          </p>
+        </div>
+        <div class="about__item">
+          <img class="about__item-img" src="images/about-3.jpg" alt="about image">
+          <h5 class="about__item-title">
+            Индивидуальный пошив
+          </h5>
+          <p class="about__item-text">
+            В нашем шоуруме Вы сможете воспользоваться услугами ателье. Реконструировать любую вещь или же пошить новую
+            по Вашим меркам.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section gallery">
+    <div class="container">
+      <div class="gallery__inner">
+        <div class="gallery__slider">
+          <div class="gallery__slider-img">
+            <img src="images/slider-img-1.jpg" alt="slider image">
+          </div>
+          <div class="gallery__slider-img">
+            <img src="images/slider-img-2.jpg" alt="slider image">
+          </div>
+          <div class="slider__item-img">
+            <img src="images/slider-img-3.jpg" alt="slider image">
+          </div>
+          <div class="gallery__slider-img">
+            <img src="images/slider-img-4.jpg" alt="slider image">
+          </div>
+          <div class="gallery__slider-img">
+            <img src="images/slider-img-1.jpg" alt="slider image">
+          </div>
+          <div class="gallery__slider-img">
+            <img src="images/slider-img-3.jpg" alt="slider image">
+          </div>
+          <div class="gallery__slider-img">
+            <img src="images/slider-img-4.jpg" alt="slider image">
+          </div>
+          <div class="gallery__slider-img">
+            <img src="images/slider-img-2.jpg" alt="slider image">
+          </div>
+        </div>
+        <div class="gallery__info">
+          <p class="gallery__info-text">
+            @burst.store
+          </p>
+          <a class="gallery__info-link" href="#">
+             Перейти в Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <div class="contacts__inner">
+      <div class="contacts__info">
+        <h2 class="contacts__info-title">
+          УЗНАВАЙТЕ ПЕРВЫМИ
+        </h2>
+        <p class="contacts__info-text">
+          Подпишитесь на нашу новостную рассылку <br> и получите скидку 15% на первый заказ
+        </p>
+      </div>
+      <form class="contacts__form">
+        <input class="contacts__form-input" type="email" placeholder="Email Address" required>
+        <div class="btn__inner">
+          <button class="btn btn--black">
+            <svg>
+              <rect x="0" y="0" fill="none" width="100%" height="100%"></rect>
+            </svg>
+            <span>Подписаться</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__inner">
+        <div class="footer__item">
+          <h6 class="footer__item-title">
+            О НАС
+          </h6>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Блог
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Услуги ателье
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Карьера в BURST
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Производство
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__item">
+          <h6 class="footer__item-title">
+            ПОМОЩЬ
+          </h6>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Доставка и оплата
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Возврат и обмен
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Публичная оферта
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Политика конфиденциальности
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__item">
+          <h6 class="footer__item-title">
+            КОНТАКТЫ
+          </h6>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Шоурум
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Обратная связь
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Предзаказ
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <h6 class="footer__item-title">
+            BURST
+          </h6>
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a class="social-list__link" href="http://instagram.com/" target="_blank">
+                <img src="images/instagram.svg" alt="social icon: instagram">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://facebook.com/" target="_blank">
+                <img src="images/facebook.svg" alt="social icon: facebook">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://vk.com/" target="_blank">
+                <img src="images/vk.svg" alt="social icon: vk">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://www.whatsapp.com/" target="_blank">
+                <img src="images/whatsapp.svg" alt="social icon: whatsapp">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://web.telegram.org/" target="_blank">
+                <img src="images/telegram.svg" alt="social icon: telegram">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

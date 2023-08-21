@@ -1,0 +1,142 @@
+html {
+    box-sizing: border-box;
+  }
+  
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+  
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+  
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-size: inherit;
+}
+  
+p{
+    margin: 0;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+body{
+    @extend %roboto-regular;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000;
+    position: relative;
+}
+
+body.lock{
+    overflow: hidden;
+}
+
+.container{
+    max-width: 1270px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.page-section{
+    margin-bottom: 50px;
+    &__wrapper{
+        min-height: 100vh;
+    }
+}
+
+.title{
+    font-size: 20px;
+    line-height: 23px;
+}
+
+// .btn{
+//     display: inline-block;
+//     color: #fff;
+//     background-color: transparent;
+//     border: 1px solid #fff;
+//     padding: 16px 18px;
+//     cursor: pointer;
+// }
+
+// .btn--black{
+//     display: inline-block;
+//     color: #000;
+//     background-color: transparent;
+//     border: 1px solid #000;
+//     padding: 16px 18px;
+//     cursor: pointer;
+//     @extend %roboto-regular;
+// }
+
+
+.btn {
+    line-height: 45px;
+    position: relative;
+    width: 100%;     
+    transition: 0.3s ease-in-out all;
+    & svg {
+        height: 50px;
+        left: 0;
+        position: absolute;
+        top: -2.5px;
+        width: 100%;
+    }
+    & rect {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2;
+        stroke-dasharray: 450, 0;
+        transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    &:hover {
+        letter-spacing: 1px;
+        & rect {
+           stroke-width: 2;
+           stroke-dasharray: 100, 310;
+           stroke-dashoffset: 110;
+        }
+    }
+    &__inner{
+        width: 200px;
+        align-self: center;
+        & button{
+            display: inline-block;
+            outline: none;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            font-family: 'Roboto-Regular', sans-serif;
+            font-weight: 400;
+            cursor: pointer;
+            background-color: transparent;
+        }
+    }
+    &.btn--black{
+        color: #000;
+        & rect {
+            stroke: #000;
+        }
+    }  
+}
+
